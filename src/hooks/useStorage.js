@@ -13,8 +13,6 @@ const useStorage = () => {
         }
 
     }
-
-
     //Salvar um item no storage
     const saveItem = async (key, value) => {
         try {
@@ -41,7 +39,7 @@ const useStorage = () => {
 
             await AsyncStorage.setItem(key, JSON.stringify(myPasswords))
             return myPasswords;
-            
+
         } catch (error) {
             console.log("Erro ao deletar", error)
         }
